@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Khand', sans-serif;
+    font-weight: 700;
+    background-color: var(--color-white);
+    z-index: 1;
+}
+// VARIABLES
+:root{
+    //ROOT
+    --color-black:rgb(56, 54, 54);
+    --color-white:rgb(255, 253, 253);
+    //BLUE
+    --color-blue-700:rgb(21, 142, 212);
+    --color-blue-500:rgb(75, 164, 216);
+    --color-blue-300:rgb(110, 183, 224);
+    --color-blue-100:rgb(126, 196, 236);
+    //ORANGE
+    --color-orange-700:rgb(221, 147, 9);
+    --color-orange-500:rgb(230, 165, 45);
+    --color-orange-300:rgb(235, 175, 65);
+    --color-orange-100:rgb(255, 185, 55);
+
+}
+//CONTAINER FOR CONTENT
+.container{
+    margin: 1rem auto;
+    max-width: 1300px;
+    padding: 0 1rem;
+}

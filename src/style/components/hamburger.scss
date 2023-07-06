@@ -1,0 +1,20 @@
+.hamburger{
+    background-color: var(--color-white);
+    padding: .2rem;
+    border-radius: .5rem;
+    margin-top: .2rem;
+    cursor: pointer;
+    transition: all 150ms ease;
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &__line{
+        background-color: var(--color-black);
+        margin: .3rem;
+        height: .4rem;
+        width: 2rem;
+        border-radius: 2rem;
+    }
+}

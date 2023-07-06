@@ -1,0 +1,21 @@
+.home{
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        letter-spacing: .03rem;
+        
+        span{
+            color: var(--color-orange-100);
+            margin: 0 .2rem;
+        }
+    }
+
+    &__cover{
+        
+        width: 100%;
+        object-fit: cover;
+    }
+}

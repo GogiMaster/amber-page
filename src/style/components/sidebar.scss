@@ -1,0 +1,50 @@
+.sidebar{
+    background-color: var(--color-orange-500);
+    border: 1px solid var(--color-black);
+    border-left:none;
+    padding: 1rem;
+    max-width: 10rem;
+    font-size: 1.3rem;
+    position: absolute;
+    z-index: 10;
+    top: 5.2rem;
+    height: 20rem;
+    left: -15rem;
+    transition: all 350ms ease;
+
+    &--open{
+        left: 0;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+
+        &__link{
+            position: relative;
+            text-decoration: none;
+            color: var(--color-white);
+            margin-bottom: .3rem;
+            padding: 0 .5rem;
+
+            &:hover,&.active{
+                border-radius: .5rem;
+                background-color: var(--color-orange-300);
+                &::before{
+                    width: 100%;
+                }
+            }
+            
+            &::before{
+                content: "";
+                height: .4rem;
+                width: 0;
+                background-color: var(--color-white);
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+                transition: all 250ms linear;
+            }
+        }
+    }
+}

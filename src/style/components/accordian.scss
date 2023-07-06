@@ -1,0 +1,42 @@
+.accordian{
+    user-select: none;
+    width: 80%;
+    border-bottom:1px solid var(--color-black);
+    font-size: 1.3rem;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: .8rem;
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    li{
+        text-transform: uppercase;
+    }
+
+    &.open{
+        svg{
+            transform: rotate(-180deg);
+        }
+    }
+    svg{
+        transition: all 259ms ease;
+    }
+
+    &__drop{
+        border: .15rem solid var(--color-black);
+        display: block;
+        border-top: none;
+        background-color: var(--color-white);
+        //overflow-wrap: break-word;
+        transition: all 250ms ease;
+        padding:0 .5rem 0rem .5rem; //ako postoji padding, text ce se sam postaviti u div
+        
+        p{
+            display: inline;
+        }
+    }
+}

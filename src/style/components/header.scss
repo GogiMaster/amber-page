@@ -1,0 +1,48 @@
+.header{
+    background-color: var(--color-orange-500);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    border-bottom:1px solid var(--color-black) ;
+
+    &__shit{
+        height: 50rem;
+    }
+
+    &__nav{
+        margin-left: .6rem;
+        &__item{
+            color: var(--color-white);
+            text-decoration: none;
+            padding: 0 .5rem;
+            position: relative;
+            
+            &:hover,&.active{
+                border-radius: .5rem;
+                background-color: var(--color-orange-300);
+                &::before{
+                    width: 84%;
+                }
+            }
+            &::before{
+                content: '';
+                height: .4rem;
+                width: 0;
+                background-color: var(--color-white);
+                position: absolute;
+                bottom: 0rem;
+                left: 0.4rem;
+                transition: all 250ms ease;
+            }
+        }
+    }
+
+}
