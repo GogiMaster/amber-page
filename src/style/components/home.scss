@@ -8,14 +8,24 @@
         letter-spacing: .03rem;
         
         span{
-            color: var(--color-orange-100);
-            margin: 0 .2rem;
+            color: var(--color-orange-900);
+            margin: 0;
         }
     }
 
     &__cover{
-        
         width: 100%;
         object-fit: cover;
+        height: 20rem;
+
+        @media(min-width: $media-tablet){
+            height: 30rem;
+        }
+        @media(min-width: $media-laptop){
+            height: 39rem;
+        }
+        @media(min-width: $media-monitor){
+            height: 40rem;
+        }
     }
 }

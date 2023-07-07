@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import ArrowDown from "../assets/photos/icons/arrowDown"
 import { NavLink } from "react-router-dom";
 
@@ -12,6 +12,9 @@ const Accordian = ({id,title="Title",description=<p>Description</p>}:AccordianPr
 const[accordian,setAccordian]=useState<boolean>(false)
 const toggleAccrodian=()=>{
     setAccordian(!accordian)
+
+
+
 }
   return (<>
     <div onClick={()=>toggleAccrodian()} className={`accordian ${accordian && "open"}`}>

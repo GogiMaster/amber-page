@@ -40,7 +40,7 @@ const Home = () => {
       </ul>
     </section>
     <Devider/>
-    dada
+    
     </div>
     </Container>
   )

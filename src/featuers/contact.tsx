@@ -3,12 +3,7 @@ import Container from "../components/container"
 const Contact = () => {
   return (
     <Container>
-        <div>dadad</div>
-        <div>dadad</div>
-        <div>dadad</div>
-        <div>dadad</div>
-        <div>dadad</div>
-        <div>dadad</div>
+        <p>Možete nas kontaktirati u svim poslovnicama Hrvatske Pošte, ili se jednostavno javite u DM na instagramu kao normalni ljudi.</p>
     </Container>
   )
 }

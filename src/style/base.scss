@@ -11,7 +11,7 @@ body{
 // VARIABLES
 :root{
     //ROOT
-    --color-black:rgb(56, 54, 54);
+    --color-black:rgb(51, 47, 47);
     --color-white:rgb(255, 253, 253);
     //BLUE
     --color-blue-700:rgb(21, 142, 212);
@@ -19,6 +19,7 @@ body{
     --color-blue-300:rgb(110, 183, 224);
     --color-blue-100:rgb(126, 196, 236);
     //ORANGE
+    --color-orange-900:rgb(197, 128, 0);
     --color-orange-700:rgb(221, 147, 9);
     --color-orange-500:rgb(230, 165, 45);
     --color-orange-300:rgb(235, 175, 65);
@@ -27,7 +28,16 @@ body{
 }
 //CONTAINER FOR CONTENT
 .container{
+    display: flex;
     margin: 1rem auto;
     max-width: 1300px;
     padding: 0 1rem;
+    
 }
+
+// Breakpoints
+$media-tablet:37em;
+$media-laptop:60em;
+$media-monitor:81em;
+//
+$color-red:rgb(146, 9, 9);

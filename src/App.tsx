@@ -4,6 +4,7 @@ import Home from './featuers/home'
 import Contact from './featuers/contact'
 import { Route, Routes } from "react-router-dom";
 import MoreAbout from './featuers/more-about';
+import Members from './featuers/members';
 
 function App() {
  
@@ -15,7 +16,10 @@ function App() {
           <Route path='/amber-page/' element={<Home/>}/>
           <Route index element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/amber-page/members' element={<Members/>}/>
           <Route path='/more-about/:moreAboutId' element={<MoreAbout/>}/>
+
+
           <Route path='*' element={<>Nema tu nis</>}/>
         </Route>
       </Routes>
