@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react"
+import { useState } from "react"
 import ArrowDown from "../assets/photos/icons/arrowDown"
 import { NavLink } from "react-router-dom";
 
