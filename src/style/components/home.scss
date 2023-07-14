@@ -1,5 +1,9 @@
 .home{
 
+    @media(min-width: $media-tablet){
+        font-size: 2rem;
+    }
+
     h1{
         text-align: center;
     }

@@ -31,10 +31,10 @@ const moreAboutList:MoreAboutListType[]=[
         text: <div className="home">
             <h1>Gurman Piva</h1>
             <Devider/>
-            <p>Gurman piva <span>MORA</span> i kad kažem <span>MORA</span> to znači da on <span>MORA</span> voljeti piti craft pivo pod nazivom <span>AMBER</span>.</p>
-            <p>Pošto je naša <span>Pijana Družina</span> maltene začeta prvim dodirom usta sa kriglom u kojoj bijaše <span>AMBER</span> 
-            svaki član <span>MORA</span> obožavati piti <span>AMBER</span>, jer takva je naša tradicija i predanost pivu.</p>
-            <p>Ako ne voliš <span>AMBER</span> i Žuja ti je zakon, fino nam pokucaj na vrata, mi će mo te pustit, i sa Janovog balkona te baciti da se GONIŠ U PIZDU LEPU MATERINU ! ! ! ! {' '} 😁</p>
+            <p>Gurman piva <span>MORA</span>, i kad kažem <span>MORA</span>, to znači da on <span>MORA</span> voljeti piti craft pivo pod nazivom <span>AMBER</span>.</p>
+            <p>Pošto je naša <span>Pijana Družina</span> maltene začeta prvim dodirom usta sa kriglom u kojoj bijaše <span>AMBER</span> {" "} 
+             svaki član <span>MORA</span> obožavati piti <span>AMBER</span>, jer takva je naša tradicija i predanost pivu.</p>
+            <p>Ako ne voliš <span>AMBER</span> i Žuja ti je zakon, fino nam pokucaj na vrata, mi će mo te pustit, i sa Janovog balkona te baciti da se GONIŠ U ***** **** ******** ! ! ! ! {' '} 😁</p>
         </div>,
         active:false
     },
@@ -44,8 +44,8 @@ const moreAboutList:MoreAboutListType[]=[
             <h1>ODREĐENO PONAŠANJE</h1>
             <Devider/>
             <p>Određeno ponašanje je <span>NAJBITNIJ </span> uvjet koji potencijalan član treba posjedovati.</p>
-            <p>Pošto smo mi u <span>Pijanoj Družini </span> dostigli svoj unutarnji mir, slobodno umni smo i WE DON'T GIVAMO FAK ZA SVE.
-            A to znači da bacamo nepotrebne šale, komentare, osuđivanja itd. i to sve u šaljivom kontextu i nema ljutnje, jer tko se naljuti is <span> PUSSY</span>.</p>
+            <p>Pošto smo mi u <span>Pijanoj Družini </span> dostigli svoj unutarnji mir, slobodno umni smo i WE DON'T CARE ZA SVE.
+            A to znači da bacamo nepotrebne šale, komentare, osuđivanja itd. i to sve u šaljivom kontextu i nema ljutnje.</p>
             <p>I ako jedan član bude sa neizmjernom kontrolom počeo verbalno napadati aka. bulijati, svi ostali članovi imaju 
             dozvolu za obranu napadnute pičke. A to podrazumjeva :</p>
             <ul>
@@ -59,7 +59,7 @@ const moreAboutList:MoreAboutListType[]=[
                 <li>Bacanjem na cestu i gaženje prijevoznim sredstvom</li>
             </ul>
             <hr />
-            <p>Nakon svih poduzetih mjera za obranu pičke, završni čin je nedolazak napadaču na sahranu . . . .<span>AMEN</span> </p>
+            <p>Nakon svih poduzetih mjera za obranu žrtve, završni čin je nedolazak napadaču na sahranu . . . .<span>AMEN</span> </p>
         </div>,
         active:false
     }
@@ -83,8 +83,8 @@ const MoreAbout = () => {
         setMoreAbout(updatedMoreIds);
     }
     useEffect(() => {
-        handleMoreAbout()
         window.scrollTo(0, 0); // Scroll to the top of the page  
+        handleMoreAbout()
       }, []);
     
   return (
@@ -93,8 +93,9 @@ const MoreAbout = () => {
         list.active && <div key={list.id}>{list.text}</div>
       )}
         {!moreAbout.some((item) => item.active) && (
-        <div>ERROR 404 OVA STRAICA NE POSTOJI
-            <p>MOLIM VAS DA SE GONITE U KURAC AKO OVO VIDITE</p>
+        <div>
+            <h1>ERROR 404 OVA STRAICA NE POSTOJI</h1>
+            <p>MOLIM VAS DA SE BJEŽITE AKO OVO VIDITE</p>
         </div>
       )}
      

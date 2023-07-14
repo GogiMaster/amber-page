@@ -1,0 +1,47 @@
+.news{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1300px;
+}
+.newsAccordian{
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: var(--color-cream);    
+
+    @media(min-width:$media-tablet ){
+        font-size: 1.8rem;
+    }
+
+    &__header{
+        background-color: var(--color-orange-100);
+        color: var(--color-black);
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title{
+            margin-right: 2.5rem;
+        }
+        &__div{
+            display: flex;
+           letter-spacing: .15rem;
+        }
+    }
+    svg{
+        width: 2rem;
+        margin-left: .2rem;
+        transition: all 205ms ease;
+    }
+    &.open{
+        svg{
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__drop{
+        padding: 0 .5rem;
+        
+    }
+}

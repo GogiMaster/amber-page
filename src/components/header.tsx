@@ -15,6 +15,10 @@ const headerLinks:LinkType[]=[
         path:"/contact",
         label:"Kontakt"
     },
+    {
+        path:"/news",
+        label:"News"
+    },
 ]
 
 type HeaderProps={

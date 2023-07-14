@@ -5,6 +5,7 @@ import Contact from './featuers/contact'
 import { Route, Routes } from "react-router-dom";
 import MoreAbout from './featuers/more-about';
 import Members from './featuers/members';
+import News from './featuers/NEWS/news';
 
 function App() {
  
@@ -13,14 +14,14 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='/amber-page/' element={<Home/>}/>
           <Route index element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/amber-page/members' element={<Members/>}/>
+          <Route path='/members' element={<Members/>}/>
+          <Route path='/news' element={<News/>}/>
           <Route path='/more-about/:moreAboutId' element={<MoreAbout/>}/>
 
 
-          <Route path='*' element={<>Nema tu nis</>}/>
+          <Route path='*' element={<>Nema tu ništ</>}/>
         </Route>
       </Routes>
     </>

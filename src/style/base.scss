@@ -7,6 +7,7 @@ body{
     font-weight: 700;
     background-color: var(--color-white);
     z-index: 1;
+    font-size: 1.2rem;
 }
 // VARIABLES
 :root{
@@ -24,6 +25,8 @@ body{
     --color-orange-500:rgb(230, 165, 45);
     --color-orange-300:rgb(235, 175, 65);
     --color-orange-100:rgb(255, 185, 55);
+    //FLAVOURS
+    --color-cream:rgb(245, 230, 202);
 
 }
 //CONTAINER FOR CONTENT
@@ -32,7 +35,6 @@ body{
     margin: 1rem auto;
     max-width: 1300px;
     padding: 0 1rem;
-    
 }
 
 // Breakpoints

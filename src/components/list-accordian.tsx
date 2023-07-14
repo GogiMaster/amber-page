@@ -8,14 +8,12 @@ type AccordianProps={
     id:string;
 }
 
-const Accordian = ({id,title="Title",description=<p>Description</p>}:AccordianProps) => {
+const ListAccordian = ({id,title="Title",description=<p>Description</p>}:AccordianProps) => {
 const[accordian,setAccordian]=useState<boolean>(false)
 const toggleAccrodian=()=>{
     setAccordian(!accordian)
-
-
-
 }
+
   return (<>
     <div onClick={()=>toggleAccrodian()} className={`accordian ${accordian && "open"}`}>
       <section className="accordian__header">
@@ -34,4 +32,4 @@ const toggleAccrodian=()=>{
   )
 }
 
-export default Accordian
+export default ListAccordian

@@ -1,16 +1,27 @@
 .accordian{
     user-select: none;
-    width: 80%;
     border-bottom:1px solid var(--color-black);
     font-size: 1.3rem;
     position: relative;
     cursor: pointer;
     margin-bottom: .8rem;
     
+    @media(min-width: $media-tablet){
+        font-size: 2rem;
+    }
+    
     &__header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &__title{
+            margin-right: 7rem;
+        }
+        &__div{
+            display: flex;
+            align-items: center;
+        }
     }
     
     li{
@@ -23,6 +34,7 @@
         }
     }
     svg{
+        width: 2rem;
         transition: all 259ms ease;
     }
 

@@ -2,7 +2,7 @@ import Container from "../components/container"
 import goran from "../assets/photos/goran.jpg"
 import jan from "../assets/photos/jan.jpg"
 import matej from "../assets/photos/gašo.jpg"
-import patrik from "../assets/photos/patrik.jpg"
+import patrik from "../assets/photos/paco.jpg"
 import Instagram from "../assets/photos/icons/icons8-instagram.svg"
 import Devider from "../components/devider"
 
@@ -40,7 +40,7 @@ const members:MembersType[]=[
         lastName:"Umiljanovič",
         slika:patrik,
         nickName:"Pačo",
-        vozilo:"Citroen, Chrisler",
+        vozilo:"Citroen, Chrysler",
         instaLink:"https://www.instagram.com/pacho007_/",
         instagram:"pacho007_",
     },

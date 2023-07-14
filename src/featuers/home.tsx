@@ -1,7 +1,7 @@
 import Container from "../components/container"
 import cover from "../assets/photos/cover.jpg"
-import Accordian from "../components/accordian"
 import Devider from "../components/devider"
+import ListAccordian from "../components/list-accordian"
 //kontent
 const content=[
   <p>. . . Generacijski kod znači da članovi <span>Pijane Družine</span> MORAJU biti prije 2005. godine</p>,
@@ -28,9 +28,9 @@ const Home = () => {
       </p>
       <h2>UVJETI :</h2>
       <ol>
-        <Accordian id={"1"} title="Generacijski kod" description={content[0]}/>
-        <Accordian id={"2"} title="Gurman piva" description={content[1]}/>
-        <Accordian id={"3"} title="određeno ponošanje" description={content[2]}/>
+        <ListAccordian id={"1"} title="Generacijski kod" description={content[0]}/>
+        <ListAccordian id={"2"} title="Gurman piva" description={content[1]}/>
+        <ListAccordian id={"3"} title="određeno ponošanje" description={content[2]}/>
       </ol>
       <h3><u>Poželjni trait-ovi</u> :</h3>
       <ul>
