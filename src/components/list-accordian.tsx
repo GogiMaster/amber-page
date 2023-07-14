@@ -23,7 +23,7 @@ const toggleAccrodian=()=>{
          {accordian && <>
     <div className={`accordian__drop ${accordian && "open"}`}>
       {description}
-      <h3><NavLink to={`/more-about/${id}`}>VIŠE . . .</NavLink></h3>
+      <h3><NavLink to={`/amber-page/more-about/${id}`}>VIŠE . . .</NavLink></h3>
     </div>
     </>}
     

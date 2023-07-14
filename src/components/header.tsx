@@ -8,15 +8,15 @@ export type LinkType = {
 };
 const headerLinks:LinkType[]=[
     {
-        path:"/",
+        path:"/amber-page/",
         label:"Home"
     },
     {
-        path:"/contact",
+        path:"/amber-page/contact",
         label:"Kontakt"
     },
     {
-        path:"/news",
+        path:"/amber-page/news",
         label:"News"
     },
 ]

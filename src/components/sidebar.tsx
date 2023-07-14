@@ -9,7 +9,7 @@ type SidebarProps={
 
 const sidebarLinks:LinkType[]=[
     {
-        path:"/members",
+        path:"/amber-page/members",
         label:"MEMBERS"
     },
 ]
