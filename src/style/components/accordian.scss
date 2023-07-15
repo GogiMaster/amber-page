@@ -14,14 +14,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--color-white);
+        z-index: 1;
 
         &__title{
             margin-right: 7rem;
+            z-index: 1;
+            width: 100%;
+            background-color: var(--color-white);
         }
         &__div{
             display: flex;
             align-items: center;
         }
+    }
+
+    &__list{
+        background-color: var(--color-white);
+        z-index: 10;
     }
     
     li{
@@ -43,8 +53,10 @@
         display: block;
         border-top: none;
         background-color: var(--color-white);
+        width: 100%;
         //overflow-wrap: break-word;
         transition: all 250ms ease;
+        z-index: -1;
         padding:0 .5rem 0rem .5rem; //ako postoji padding, text ce se sam postaviti u div
         
 

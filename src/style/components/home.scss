@@ -1,5 +1,6 @@
 .home{
 
+    transition: all 250ms ease;
     @media(min-width: $media-tablet){
         font-size: 2rem;
     }

@@ -27,7 +27,7 @@ const Home = () => {
       uvjetima tj. MORA imati sva 3 navedene mogučnosti :
       </p>
       <h2>UVJETI :</h2>
-      <ol>
+      <ol className="accordian__list">
         <ListAccordian id={"1"} title="Generacijski kod" description={content[0]}/>
         <ListAccordian id={"2"} title="Gurman piva" description={content[1]}/>
         <ListAccordian id={"3"} title="određeno ponošanje" description={content[2]}/>

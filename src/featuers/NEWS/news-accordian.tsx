@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import ArrowDown from "../../assets/photos/icons/arrowDown";
 import { novosti } from "./NOVOSTI";
 import Devider from "../../components/devider";
+import {motion,AnimatePresence} from "framer-motion";
+import { accordianVariants } from "../../components/list-accordian";
+
 
 type NewsAccordianProps={
     title:string;
@@ -33,13 +36,21 @@ useEffect(()=>{
          <ArrowDown />
         </div>
       </section>
+      <AnimatePresence>
          {accordian && <>
-    <div className={`newsAccordian__drop ${accordian && "open"}`}>
+    <motion.div
+       className={`newsAccordian__drop ${accordian && "open"}`}
+       variants={accordianVariants}
+       initial="hidden"
+       animate="visible"
+       exit="exit"
+       transition={{duration:.5}}
+       >
       {news}
-    </div>
+    </motion.div>
     <Devider/>
     </>}
-    
+    </AnimatePresence>
     </div>
     </>
   )

@@ -5,8 +5,9 @@ import { novosti } from "./NOVOSTI"
 const News = () => {
   return (
     <Container>
-        <div>
+      <div>
           <h1>Najnovije Vijesti</h1>
+        
           <div className="news">
           {novosti.map((news)=>{
             return<div key={news.id}>
@@ -14,7 +15,7 @@ const News = () => {
             </div>
           })}
           </div>
-        </div>
+          </div>
     </Container>
   )
 }
