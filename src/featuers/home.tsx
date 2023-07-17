@@ -1,14 +1,15 @@
-import Container from "../components/container"
 import cover from "../assets/photos/cover.jpg"
+import Container from "../components/container"
 import Devider from "../components/devider"
 import ListAccordian from "../components/list-accordian"
-//kontent
-const content=[
-  <p>. . . Generacijski kod znači da članovi <span>Pijane Družine</span> MORAJU biti prije 2005. godine</p>,
-  <p>. . . Gurman piva <span>MORA</span>, i kad kažem <span>MORA</span> to znači da on <span>MORA</span> voljeti piti craft pivo pod nazivom{<span>AMBER</span>}</p>,
-  <p>. . .Određeno ponašanje je <span>NAJBITNIJi</span> uvjet koji potencijalan član treba posjedovati</p>
-]
 
+//kontent za listu uvjeta
+const content=[
+  <p>Generacijski kod znači da članovi <span>Pijane Družine</span> MORAJU biti rođeni prije 2005. godine</p>,
+  <p>Gurman piva <span>MORA</span>, i kad kažem <span>MORA</span> to znači da on <span>MORA</span> voljeti piti craft pivo pod nazivom{<span>AMBER</span>}</p>,
+  <p>Određeno ponašanje je <span>NAJBITNIJi</span> uvjet koji potencijalan član treba posjedovati</p>
+]
+//
 const Home = () => {
   return (
     <Container>
@@ -26,6 +27,7 @@ const Home = () => {
       ostali članovi ljudske populacije, u<span>Pijanu Družinu</span> se može uči pod vrlo striktnim
       uvjetima tj. MORA imati sva 3 navedene mogučnosti :
       </p>
+      <article>
       <h2>UVJETI :</h2>
       <ol className="accordian__list">
         <ListAccordian id={"1"} title="Generacijski kod" description={content[0]}/>
@@ -38,6 +40,7 @@ const Home = () => {
         <li>Biti glazbeno osjiešten, pošto su svi u družini muzičari, neki više neki manje.</li>
         <li>Imati para za cugu . . .</li>
       </ul>
+      </article>
     </section>
     <Devider/>
     

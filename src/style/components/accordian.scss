@@ -1,27 +1,39 @@
 .accordian{
     user-select: none;
-    border-bottom:1px solid var(--color-black);
     font-size: 1.3rem;
     position: relative;
     cursor: pointer;
     margin-bottom: .8rem;
-    
+
     @media(min-width: $media-tablet){
         font-size: 2rem;
     }
     
     &__header{
+        //border-radius: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--color-white);
-        z-index: 1;
-
+        flex-direction: column;
+       // background-color: var(--color-orange-500);
+       
         &__title{
-            margin-right: 7rem;
+            transition: all 500ms ease;
+            border-radius: 2rem;
             z-index: 1;
             width: 100%;
-            background-color: var(--color-white);
+            background-color: var(--color-orange-500);
+
+            div{
+                margin-left: 1rem;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &.open{
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
         }
         &__div{
             display: flex;
@@ -30,20 +42,23 @@
     }
 
     &__list{
-        background-color: var(--color-white);
+     //   background-color: var(--color-white);
         z-index: 10;
     }
     
     li{
+        word-spacing: .2rem;
         text-transform: uppercase;
     }
 
     &.open{
+        border-bottom-left-radius: 0;
         svg{
             transform: rotate(-180deg);
         }
     }
     svg{
+        margin-right: .5rem;
         width: 2rem;
         transition: all 259ms ease;
     }
@@ -56,10 +71,8 @@
         width: 100%;
         //overflow-wrap: break-word;
         transition: all 250ms ease;
-        z-index: -1;
+        z-index: -2;
         padding:0 .5rem 0rem .5rem; //ako postoji padding, text ce se sam postaviti u div
-        
-
         
         p{
             display: inline;
