@@ -27,15 +27,19 @@ type HeaderProps={
   sidebarToggle:()=>void;
   onClose:()=>void
   children:ReactNode;
+  hamburgerToggle:boolean;
 }
-const Header = ({sidebarToggle,onClose,children}:HeaderProps) => {
+const Header = ({sidebarToggle,onClose,children,hamburgerToggle}:HeaderProps) => {
+
   return (
     <motion.header className="header"
     initial={{y:-200,zIndex:-1,opacity:0}}
     animate={{y:0,opacity:1,zIndex:1}}
    transition={{delay:1,duration:.5}}
     >{children}
-    <Hamburger toggle={sidebarToggle}/>
+    <div className={`hamburger ${hamburgerToggle && "hamburger__open"}`}>
+    <Hamburger  toggle={sidebarToggle}/>
+    </div>
         <nav className="header__nav">
             {headerLinks.map((link)=>{
                 return <NavLink onClick={onClose} className={`header__nav__item `} key={link.path} to={link.path}>{link.label}</NavLink>

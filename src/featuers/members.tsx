@@ -59,6 +59,9 @@ const members:MembersType[]=[
 const Members = () => {
   return (
     <Container>
+        <div className="member__align">
+
+        
         <div className="member">
        {members.map((member)=>{
         return (
@@ -85,6 +88,7 @@ const Members = () => {
         )
        })}
 
+        </div>
         </div>
     </Container>
   )

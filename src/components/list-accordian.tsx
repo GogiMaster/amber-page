@@ -20,10 +20,11 @@ export const accordianVariants={
         zIndex:[0,0,0,0,0,0,1],
         transition:{
             duration:.1,
+            ease:"linear"
         }
   },
   exit:{
-    y:-100,
+    y:-90,
     opacity:[1],
     zIndex:-2,
     transition:{duration:.2}
@@ -39,7 +40,9 @@ const toggleAccrodian=()=>{
   return (<>
     <div  className={`accordian ${accordian && "open"}`}>
       <section className="accordian__header">
-        <li onClick={()=>toggleAccrodian()} className={`accordian__header__title ${accordian && "open"} `}><div>{title} <ArrowDown /></div></li>
+        <li onClick={()=>toggleAccrodian()} className={`accordian__header__title ${accordian && "open"} `}>
+          <div>{title} <ArrowDown /></div>
+        </li>
          
 
       <AnimatePresence mode="wait">

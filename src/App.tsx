@@ -2,22 +2,26 @@ import './style/style.scss'
 import Layout from './components/layout'
 import Home from './featuers/home'
 import Contact from './featuers/contact'
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes,
+  // useLocation
+   } from "react-router-dom";
 import MoreAbout from './featuers/more-about';
 import Members from './featuers/members';
 import News from './featuers/NEWS/news';
 import {AnimatePresence} from "framer-motion"
+import Button from './components/button';
 
 const App=()=> {
- const location=useLocation()
+  //const location=useLocation()
  
   return (
     <>
     
-    <Layout />   {/*Layout ovdje renderam zato sto se u Routes-u ponavlja animacija svaki put kada se ucita novi page*/ }
+   {/* <Layout />   Layout ovdje renderam zato sto se u Routes-u ponavlja animacija svaki put kada se ucita novi page*/ }
     <AnimatePresence mode={'wait'} >
-      <Routes location={location} key={location.key}>
-        <Route //path='/' element={<Layout/>}
+      <Routes // location={location} key={location.key}
+      >
+        <Route path='/' element={<Layout/>}
         >
           <Route index element={<Home/>}/>
           <Route path='/amber-page/' element={<Home/>}/>
@@ -30,6 +34,7 @@ const App=()=> {
         </Route>
       </Routes>
       </AnimatePresence>
+      <Button type="scrollToTop"/>
     </>
   )
 }

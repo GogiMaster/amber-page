@@ -27,15 +27,15 @@ useEffect(()=>{
   return (
     <>
     <div  className={`newsAccordian ${accordian && "open"}`}>
-      <section onClick={()=>toggleAccrodian()} className="newsAccordian__header">
-        <div className="newsAccordian__header__title">{title}</div>
-        <div className="newsAccordian__header__div">
-          
-         {date}
-          
-         <ArrowDown />
+      <section className="newsAccordian__header">
+        <div  onClick={()=>toggleAccrodian()} className="newsAccordian__header__title">
+          <div>{title}</div>  
+          <hr />
+           {date}
+           <div className="newsAccordian__header__arrow">
+           <ArrowDown />
+           </div>
         </div>
-      </section>
       <AnimatePresence>
          {accordian && <>
     <motion.div
@@ -47,10 +47,11 @@ useEffect(()=>{
        transition={{duration:.5}}
        >
       {news}
-    </motion.div>
     <Devider/>
+    </motion.div>
     </>}
     </AnimatePresence>
+        </section>
     </div>
     </>
   )

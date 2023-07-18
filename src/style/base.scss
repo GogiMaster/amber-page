@@ -7,7 +7,6 @@ body{
     font-family: 'Khand', sans-serif;
     font-weight: 700;
     background-color: var(--color-white);
-    z-index: 1;
     font-size: 1.2rem;
 }
 // VARIABLES
@@ -15,6 +14,7 @@ body{
     //ROOT
     --color-black:rgb(51, 47, 47);
     --color-white:rgb(255, 253, 253);
+    --color-gray:rgb(133, 133, 133);
     //BLUE
     --color-blue-700:rgb(21, 142, 212);
     --color-blue-500:rgb(75, 164, 216);
@@ -35,9 +35,19 @@ body{
     min-height: 60vh;
     user-select: none;
     margin: 1rem auto;
-    max-width: 1300px;
     padding: 0 1rem;
     margin-bottom: 10rem;
+
+    @media(min-width: 37em){
+        max-width: 600px;
+    }
+
+    @media(min-width: 63em){
+        max-width: 1100px;
+    }
+    @media(min-width: 81em){
+        max-width: 1300px;
+    }
 }
 
 // Breakpoints

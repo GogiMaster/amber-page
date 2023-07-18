@@ -13,7 +13,7 @@ const Layout = () => {
   return (
     <>
         <Logo/>
-        <Header sidebarToggle={()=>openSidebar()} onClose={()=>setSidebar(false)}>
+        <Header hamburgerToggle={sidebar} sidebarToggle={()=>openSidebar()} onClose={()=>setSidebar(false)}>
         <SideBar onClose={()=>setSidebar(false)} isOpen={sidebar}/>
         </Header>
 

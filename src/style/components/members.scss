@@ -4,13 +4,13 @@
     margin: 0 auto;
     gap: 1rem;
 
-    @media (min-width: $media-tablet){
+    @media (min-width: 770px){
         grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: $media-laptop){
+    @media (min-width: 1011px){
         grid-template-columns: 1fr 1fr 1fr ;
     }
-    @media (min-width: $media-monitor){
+    @media (min-width: 1380px){
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -49,5 +49,10 @@
             border-radius: 1rem;
             border: 5px solid #ffffff;
         }
+    }
+
+    &__align{
+        display: flex;
+        justify-content: center;
     }
 }

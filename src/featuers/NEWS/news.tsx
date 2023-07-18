@@ -1,8 +1,17 @@
+import { useEffect } from "react"
 import Container from "../../components/container"
 import NewsAccordian from "./news-accordian"
 
 import { novosti } from "./NOVOSTI"
 const News = () => {
+
+  useEffect(()=>{
+    window.scrollTo({
+      top:900,
+      behavior:"smooth"
+    })
+  },[])
+
   return (
     <Container>
       <div>

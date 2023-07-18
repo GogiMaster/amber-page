@@ -6,32 +6,37 @@
 .newsAccordian{
     margin-bottom: 2rem;
     width: 100%;
-    background-color: var(--color-cream);    
+      
     
     @media(min-width:$media-tablet ){
         font-size: 1.8rem;
     }
     
     &__header{
-        z-index: 10;
         transition: all 500ms linear;
         width: 100%;
         cursor: pointer;
         text-transform: uppercase;
-        background-color: var(--color-orange-100);
         color: var(--color-black);
         font-size: 1.5rem;
-        padding: 0.5rem;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-
+        flex-direction: column;
+        
         &__title{
+            position: relative;
+            z-index: 10;
+            padding: 0.5rem;
+            width: 100%;
+            background-color: var(--color-orange-100);
             margin-right: 2.5rem;
         }
-        &__div{
-            display: flex;
-           letter-spacing: .15rem;
+        &__arrow{
+            background-color: var(--color-orange-100);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-40%);
         }
     }
     svg{
@@ -47,6 +52,6 @@
 
     &__drop{
         padding: 0 .5rem;
-        
+        background-color: var(--color-cream);          
     }
 }

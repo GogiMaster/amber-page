@@ -2,7 +2,6 @@ import cover from "../assets/photos/cover.jpg"
 import Container from "../components/container"
 import Devider from "../components/devider"
 import ListAccordian from "../components/list-accordian"
-
 //kontent za listu uvjeta
 const content=[
   <p>Generacijski kod znači da članovi <span>Pijane Družine</span> MORAJU biti rođeni prije 2005. godine</p>,
@@ -11,7 +10,8 @@ const content=[
 ]
 //
 const Home = () => {
-  return (
+ 
+  return (<>
     <Container>
     <div className="home">
     <h1>PIJANA DRUŽINA</h1>
@@ -43,9 +43,23 @@ const Home = () => {
       </article>
     </section>
     <Devider/>
-    
+    <article>
+      <h2>Osnivanje</h2>
+      <p>Družina je nastala tako što su začetnici <span>Goran</span> i <span>Jan</span> nakon dugog
+      perioda ne viđanja jedno drugog, otišli u jedan lokal pod imenom <span>Beer Garden</span> 12. Svibnja 2022. godine
+      kada su otkrili sveto craft pivo <span>AMBER</span> i od tada je nastala družina i ljubav #noHomo prema pivu.</p>
+      <p>Okupljanja su se odvijala u početku dva puta tjedno (ponedjeljkom i petkom), ali s vremenom je ostalo samo 
+        jednom tjedno, najčešći dani su bili petak ili nedjelja,a od početka 2023. godine, okupljanja se odvijaju
+        koliku puta se prohtje.</p>
+        <p>Družina je upoznala svoja 2 nova člana <span>Mateja</span> i <span>Patrika</span> (koji imaju nadimke 
+        s razlogom) u noćnom techno klubu kojem je ime postalno nebitno,u jesen 2022. godine i ubrzo su i oni postali
+        stalni članovi družine.</p>
+        <Devider/>
+    </article>
     </div>
     </Container>
+  
+    </>
   )
 }
 

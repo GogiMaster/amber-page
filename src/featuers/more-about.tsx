@@ -19,7 +19,7 @@ const moreAboutList:MoreAboutListType[]=[
             <p>Pošto su trenutno postoječi članovi kolektivno rođeni 2003. godine, smatramo i uvjereni smo  (iz iskustva)
             da po naše dobro (mentalno, financijsko, spiritualno stanje) nije pametno primati u zajednicu osobe rođene van dopuštene dobne skupine.</p>
             <p>Kako je na snazi trenutno pravilo koje se odnosi na sve koji su rođeni nakon 2005. godine, nemamo određeno dopušteno godište za rođene prije 2005. godine,
-            mada smo sigurni da starija demografija <span>GEN Z-a</span> može uči u družinu. A po neslužbenim podatcima sa Googleta najsatriji <span>GEN Z</span>
+            mada smo sigurni da starija demografija <span>GEN Z-a</span> može uči u družinu. A po neslužbenim podatcima sa Googleta najstariji <span>GEN Z </span> {" "}
             domorodci su rođeni 1996. godine.
             </p>
         </div>
@@ -83,8 +83,10 @@ const MoreAbout = () => {
         setMoreAbout(updatedMoreIds);
     }
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page  
         handleMoreAbout()
+        window.scrollTo({
+            top:0
+        }); // Scroll to the top of the page  
       }, []);
     
   return (
