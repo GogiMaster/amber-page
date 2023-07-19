@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import {motion} from "framer-motion"
 
+
 type ContainerProps={
     children:ReactNode;
 }
@@ -25,8 +26,10 @@ export const pageLoadVariants={
 
 
 const Container = ({children}:ContainerProps) => {
+
   return (
-    <motion.div className="container"
+    <motion.div
+    className="container"
     variants={pageLoadVariants}
     initial="load"
     animate="stand"

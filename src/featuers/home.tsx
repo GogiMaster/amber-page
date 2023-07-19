@@ -1,7 +1,9 @@
+
 import cover from "../assets/photos/cover.jpg"
 import Container from "../components/container"
 import Devider from "../components/devider"
 import ListAccordian from "../components/list-accordian"
+import LoadIntoView from "../components/load-into-view"
 //kontent za listu uvjeta
 const content=[
   <p>Generacijski kod znači da članovi <span>Pijane Družine</span> MORAJU biti rođeni prije 2005. godine</p>,
@@ -9,15 +11,22 @@ const content=[
   <p>Određeno ponašanje je <span>NAJBITNIJi</span> uvjet koji potencijalan član treba posjedovati</p>
 ]
 //
+
+
+
 const Home = () => {
- 
+
   return (<>
     <Container>
     <div className="home">
     <h1>PIJANA DRUŽINA</h1>
+    <h6>
+      <a href="#about-us">About Us</a> /  <a href="#uvjeti">Uvjeti</a> / <a href="#osnivanje">Osnivanje</a> /
+    </h6>
     <Devider/>
     <img src={cover} className="home__cover" />
-    <section>
+    <LoadIntoView>
+    <section id="about-us">
       <h2>About us</h2>
       <p><span>Pijana Družina</span> je ime grupe koju sam izmislio jučer
         jer ustvari mi nemamo OFFICIAL ime. <br />
@@ -27,7 +36,10 @@ const Home = () => {
       ostali članovi ljudske populacije, u<span>Pijanu Družinu</span> se može uči pod vrlo striktnim
       uvjetima tj. MORA imati sva 3 navedene mogučnosti :
       </p>
-      <article>
+      </section>
+    </LoadIntoView>
+    <LoadIntoView>
+      <article id="uvjeti" >
       <h2>UVJETI :</h2>
       <ol className="accordian__list">
         <ListAccordian id={"1"} title="Generacijski kod" description={content[0]}/>
@@ -41,9 +53,11 @@ const Home = () => {
         <li>Imati para za cugu . . .</li>
       </ul>
       </article>
-    </section>
+
+    </LoadIntoView>
     <Devider/>
-    <article>
+    <LoadIntoView>
+    <article id="osnivanje" >
       <h2>Osnivanje</h2>
       <p>Družina je nastala tako što su začetnici <span>Goran</span> i <span>Jan</span> nakon dugog
       perioda ne viđanja jedno drugog, otišli u jedan lokal pod imenom <span>Beer Garden</span> 12. Svibnja 2022. godine
@@ -56,6 +70,7 @@ const Home = () => {
         stalni članovi družine.</p>
         <Devider/>
     </article>
+    </LoadIntoView>
     </div>
     </Container>
   

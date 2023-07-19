@@ -19,10 +19,9 @@ const App=()=> {
     
    {/* <Layout />   Layout ovdje renderam zato sto se u Routes-u ponavlja animacija svaki put kada se ucita novi page*/ }
     <AnimatePresence mode={'wait'} >
-      <Routes // location={location} key={location.key}
+      <Routes // location={location} key={location.key} vraca mi page na vrh svaki put kad se ucita s useLocation
       >
-        <Route path='/' element={<Layout/>}
-        >
+        <Route path='/' element={<Layout/>}>
           <Route index element={<Home/>}/>
           <Route path='/amber-page/' element={<Home/>}/>
           <Route path='/amber-page/contact' element={<Contact/>}/>

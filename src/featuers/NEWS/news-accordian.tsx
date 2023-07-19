@@ -42,7 +42,7 @@ useEffect(()=>{
        className={`newsAccordian__drop ${accordian && "open"}`}
        variants={accordianVariants}
        initial="hidden"
-       animate="visible"
+       animate="visibleNews"
        exit="exit"
        transition={{duration:.5}}
        >

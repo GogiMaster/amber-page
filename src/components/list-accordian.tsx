@@ -12,22 +12,34 @@ type AccordianProps={
 export const accordianVariants={
   hidden:{
       opacity:0,
-      y:-40,
+      height:0,
+      y:-30,
     },
     visible:{
+      height:"12rem",
         y:0,
         opacity:1,
         zIndex:[0,0,0,0,0,0,1],
         transition:{
-            duration:.1,
+            duration:0,
+            ease:"linear"
+        }
+  },
+    visibleNews:{
+        y:0,
+        height:"fit-content",
+        opacity:1,
+        zIndex:[0,0,0,0,0,0,1],
+        transition:{
+            duration:.5,
             ease:"linear"
         }
   },
   exit:{
-    y:-90,
+    y:-30,
     opacity:[1],
     zIndex:-2,
-    transition:{duration:.2}
+    transition:{duration:.1}
   }
 }
 
@@ -63,6 +75,7 @@ const toggleAccrodian=()=>{
       </AnimatePresence>
       </section>
     </div>
+
   </>
   )
 }
