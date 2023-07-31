@@ -1,0 +1,16 @@
+.zabava{
+    display: flex;
+    flex-direction: column;
+
+    &__video{
+        max-width: 100%;
+        border: .5rem groove var(--color-black);
+
+            @media (min-width:$media-tablet){
+                max-width: 70%;
+            }
+            @media (min-width:$media-laptop){
+                max-width: 40%;
+            }
+    }
+}

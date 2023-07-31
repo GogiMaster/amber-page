@@ -20,4 +20,21 @@ export const novosti:NovostiType[]=[
         </p>
         </div>
     },
+    {
+        naslov:"Stric u boci party",
+        id:2,
+        datum:"31.7.2023.",
+        opis:<div>
+        <p>
+            U DVD-u Našice se organizirala mala proslava povodom obavljanja uspješne transakcije
+            u kupovini gajbe Ambera. Petak 28.Srpanja je zabilježen kao zabavno okupljanje 
+            uže grupe frendova koji uživaju u Amberu.
+        </p>
+        <p>
+            Tijekom zabave novo otkriveni specimen čovjeka je otkriven koji ispunjava 
+            do sada pokazane kriterije za ulazak u družinu. Dodatna testiranja su potrebna
+            radi sigurnosti.
+        </p>
+        </div>
+    },
 ]

@@ -10,6 +10,7 @@ import Members from './featuers/members';
 import News from './featuers/NEWS/news';
 import {AnimatePresence} from "framer-motion"
 import Button from './components/button';
+import Zabava from './featuers/ZABAVA-ARCHIVA/zabava';
 
 const App=()=> {
   //const location=useLocation()
@@ -26,6 +27,7 @@ const App=()=> {
           <Route path='/amber-page/' element={<Home/>}/>
           <Route path='/amber-page/contact' element={<Contact/>}/>
           <Route path='/amber-page/members' element={<Members/>}/>
+          <Route path='/amber-page/zabava' element={<Zabava/>}/>
           <Route path='/amber-page/news' element={<News/>}/>
           <Route path='/amber-page/more-about/:moreAboutId' element={<MoreAbout/>}/>
 
