@@ -2,14 +2,7 @@ import Container from "../../components/container"
 import Devider from "../../components/devider";
 
 //content
-import pijenje from "../../assets/archive/pijenje-duo.mp4"
-import euro from "../../assets/archive/50euro.mp4"
-import beninging from "../../assets/archive/beninging.mp4"
-import brkovi from "../../assets/archive/brkovi.mp4"
 import skeri from "../../assets/archive/skeri.jpg"
-import ukulele from "../../assets/archive/ukulele.mp4"
-import ovca from "../../assets/archive/ovca.mp4"
-
 //
 type ArchiveType = {
     content:JSX.Element;
@@ -17,18 +10,20 @@ type ArchiveType = {
     datum:string;
 } 
 
+const ytShortHeight = 504;
+
 const archive:ArchiveType[] =[
     {   datum:"2.10.2022",
         id:1,
-        content:<video className="zabava__video" controls src={beninging}/>
+        content:<iframe className="zabava__video" height={ytShortHeight}  src={"https://youtube.com/embed/QUyV6F5wJMs?feature=share"}/>
     },
     {   datum:"27.5.2023",
         id:2,
-        content:<video className="zabava__video" controls src={brkovi}/>
+        content:<iframe className="zabava__video" src={"https://www.youtube.com/embed/_gvPg-lsq-U"}/>
     },
     {   datum:"1.6.2023",
         id:3,
-        content:<video className="zabava__video" controls src={euro}/>
+        content:<iframe height={ytShortHeight} className="zabava__video"  src={"https://youtube.com/embed/V1LNPM61LAQ?feature=share"}/>
     },
     {   datum:"1.7.2023",
         id:4,
@@ -36,15 +31,15 @@ const archive:ArchiveType[] =[
     },
     {   datum:"22.7.2023",
         id:5,
-        content:<video className="zabava__video" controls src={pijenje}/>
+        content:<iframe className="zabava__video" height={ytShortHeight} src={"https://youtube.com/embed/Bfm-WhyTydA"}/>
     },
     {   datum:"30.4.2023",
         id:6,
-        content:<video className="zabava__video" controls src={ukulele}/>
+        content:<iframe className="zabava__video" height={ytShortHeight} src="https://www.youtube.com/embed/bNlg0sd4hEc"/>
     },
     {   datum:"8.7.2023",
         id:7,
-        content:<video className="zabava__video" controls src={ovca}/>
+        content:<iframe className="zabava__video" height={ytShortHeight} src={"https://youtube.com/embed/7WOqGprxHHo"}/>
     },
 ]
 
